@@ -1,0 +1,5 @@
+# pdflatex linux command byproducts
+*.pdf
+*.aux
+*.out
+*.log
