@@ -38,7 +38,7 @@
 Name & Student ID \\
 \hline\hline
 Pavel Balan & ID Number \\ \hline
-Ivan Garzon & ID Number \\ \hline
+Ivan Garzon & 27006284 \\ \hline
 Ki Ho Lee & ID Number \\ \hline
 Nian Lui & ID Number \\ \hline
 Anthony Menard-Gill & ID Number \\ \hline
@@ -77,15 +77,31 @@ Mona Shayvard & ID Number \\ \hline
 \subsubsection{Use Case 1} \label{uc:1}
 \begin{tabular}{|p{0.25\textwidth}|p{0.75\textwidth}|}
 \hline
-\bf Name & Give a name \\ \hline
-\bf Summary & Short summary/description/story \\ \hline
-\bf Actors & List of actors \\ \hline
-\bf Precondition & List of preconditions \\ \hline
-\bf Main Scenario & Describe step 1, 2, 3, etc. \\ \hline
-\bf Exceptions & List exceptions \\ \hline
-\bf Postcondition & List postconditions \\ \hline
-\bf Priority & Note priority \\ \hline
-\bf Traces to Test Case & Add when test cases done \\ \hline
+\bf Name & Start Game \\ \hline
+\bf Summary & The user press the button Start Game. A 10x10 grid is displayed  on the left side with the leftmost column with black squares and the topmost row with black squares. On the right side, there will be a list of rules describing the game. The clues will be displayed in the black cells. \\ \hline
+\bf Actors & Player \\ \hline
+\bf Preconditions & 
+\begin{itemize}
+    \item Choosing the level of difficulty. If the user does not choose a level, the default 'easy' level will be applied.
+    \item The user can enter a username before starting the game, if it is not chosen the default username is: user1. 
+\end{itemize} \\ \hline
+\bf Main Scenario & 
+\begin{enumerate}
+  \item The player clicks on the Start Game button.
+  \item The grid is initialized on the left side with clues and empty cells.
+  \item The numeric keypad with numbers 1 to 9 is displayed on the right side.
+  \item The game menu buttons are displayed on the right side.
+  \item The rules of the game are displayed on the right side.
+\end{enumerate} \\ \hline
+\bf Exceptions & 
+\begin{itemize}
+    \item The player clicks on exit to end the game.
+    \item The player chooses a different level and the grid is re-drawn.
+    \item The player decides to enter his username and the interface takes him to the appropriate window.
+\end{itemize} \\ \hline
+\bf Postcondition & None \\ \hline
+\bf Priority & The game is in play mode and the options displayed belong only to the current game. \\ \hline
+\bf Traces to Test Case & The start game case is done after clicking on the button. \\ \hline
 \end{tabular}
 
 \subsubsection{Use Case 2} \label{uc:2}
